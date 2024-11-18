@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WebMinds Solutions - Innovative Web Development">
+    <title>WebMinds Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="WebMinds Solutions Logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <h1>Welcome to WebMinds Solutions</h1>
+            <p>Your partner in innovative web development solutions.</p>
+            <button id="exploreBtn">Explore More</button>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <p>Build responsive, dynamic websites with modern technologies.</p>
+                </div>
+                <div class="card">
+                    <h3>App Development</h3>
+                    <p>Create user-friendly, cross-platform mobile apps.</p>
+                </div>
+                <div class="card">
+                    <h3>SEO & Marketing</h3>
+                    <p>Boost your online presence with effective SEO and marketing strategies.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>WebMinds Solutions is a cutting-edge tech company specializing in web development, mobile app development, and digital marketing. We help businesses grow and succeed online.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required />
+                <input type="email" id="email" placeholder="Your Email" required />
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 WebMinds Solutions. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hero {
+    background-color: #2a9d8f;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+button {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #f4a261;
+}
+
+#services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #e9ecef;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+}
+
+#contact {
+    padding: 50px 20px;
+    background-color: #f1f1f1;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+// Handle button click event on the hero section
+document.getElementById('exploreBtn').addEventListener('click', function() {
+    alert('Thank you for your interest in WebMinds Solutions!');
+});
+
+// Contact form submit event (mockup - no backend functionality)
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    alert(`Message Sent! \n Name: ${name} \n Email: ${email} \n Message: ${message}`);
+});
+# WebMinds Solutions
+
+Welcome to WebMinds Solutions! We are a web and mobile application development company offering innovative digital solutions to help businesses succeed online.
+
+## Features
+- Web Development
+- Mobile App Development
+- SEO & Digital Marketing
+
+## How to Run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/webminds-solution.git
